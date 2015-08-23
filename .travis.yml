@@ -9,15 +9,12 @@ matrix:
     - php: hhvm
 before_script: 
  - composer self-update
-  - touch storage/testing.sqlite
   - composer install -n --prefer-dist
-  - php artisan migrate --database=sqlite_testing --force
+
   - ./vendor/bin/codecept build
 
 # Run tests through Codeception
 script:   
 - ./vendor/bin/codecept run
-deploy:
-  provider: heroku
-  api_key: "e829183d-1e65-40f3-9a86-611d6677e8dd"	
-  
+
+
