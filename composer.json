@@ -12,7 +12,7 @@
         "laracasts/flash": "dev-master",
         "arrilot/laravel-widgets": "dev-master",
         "webpatser/laravel-uuid": "dev-master",
-        "codeception/codeception": "*",
+        "codeception/codeception": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
