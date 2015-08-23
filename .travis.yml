@@ -4,13 +4,9 @@ php:
   - 5.4
   - hhvm
   - nightly
-matrix:
-  allow_failures:
-    - php: hhvm
 before_script: 
  - composer self-update
   - composer install -n --prefer-dist
-
   - ./vendor/bin/codecept build
 
 # Run tests through Codeception
