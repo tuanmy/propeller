@@ -13,7 +13,6 @@
         "arrilot/laravel-widgets": "dev-master",
         "webpatser/laravel-uuid": "dev-master",
         "codeception/codeception": "*",
-        "pragmarx/ci": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
