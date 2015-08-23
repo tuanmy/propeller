@@ -146,7 +146,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         'Barryvdh\Debugbar\ServiceProvider',
         Arrilot\Widgets\ServiceProvider::class,
-        'PragmaRX\Ci\Vendor\Laravel\ServiceProvider',
       
 
     ],
