@@ -28,7 +28,8 @@ class ExampleTest extends \Codeception\TestCase\Test
         //$id = $this->tester->haveRecord('user', ['username' => 'trantuanmy12']);
         //$id = $this->haveRecordUuid('User',['username' => 'trantuanmy12'])
         $user = User::create([
-            'username' => 'trantuanmy12'
+            'username' => 'trantuanmy12',
+            'email' => 'tuanmythkt@gmail.com'
         ]);
         // access model
         $user = User::find($user->id);

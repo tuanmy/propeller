@@ -7,11 +7,14 @@ php:
 matrix:
   allow_failures:
     - php: hhvm
+env:
+  - DB_HOST="127.0.0.1" DB_NAME="jeff_proseeds" DB_USERNAME="root"
 before_script: 
   - composer self-update
   - touch storage/testing.sqlite
   - composer install -n --prefer-dist
-  - php artisan migrate --database=sqlite_testing --force
+  - php artisan migrate --force
+  - mysql -e 'create database jeff_proseeds;'
   - ./vendor/bin/codecept build
 
 # Run tests through Codeception
