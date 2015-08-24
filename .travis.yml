@@ -10,6 +10,8 @@ matrix:
 env:
   - DB_HOST="127.0.0.1" DB_NAME="jeff_proseeds" DB_USERNAME="root"
 before_script: 
+  - composer self-update
+  - composer install -n --prefer-dist
   - mysql -e 'create database jeff_proseeds;'
   - php artisan migrate --force
   - ./vendor/bin/codecept build
